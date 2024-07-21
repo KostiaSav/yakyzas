@@ -1,0 +1,25 @@
+.slider_stock {
+    margin-top: 90px;
+  }
+  
+  .slick-dots div {
+    border-radius: 20px;
+  }
+  
+  .slick-dots li {
+    width: 20px ;
+  }
+  
+  .slick-dots {
+    bottom: -35px !important;
+  }
+  
+  .slick-dots li button::before {
+    color: #434343 !important;
+    opacity: 1 !important;
+    font-size: 16px!important;
+  }
+  
+  .slick-dots .slick-active button::before {
+    color: #7B7B7B !important;
+  }

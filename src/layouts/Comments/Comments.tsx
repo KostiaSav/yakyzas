@@ -26,7 +26,7 @@ const Comments = () => {
                     ?
                     <Box>Loading...</Box>
                     :
-                    data.map((el) => {
+                    data?.map((el) => {
                         return <Comment key={el._id} options={el} />
                     })
                 }

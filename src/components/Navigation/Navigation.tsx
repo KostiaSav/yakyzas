@@ -1,14 +1,13 @@
-import { Box, Typography } from "@mui/material"
-import { Link, animateScroll as scroll } from "react-scroll";
-import { INavigationPages } from "../../typesript/interfaces"
-
+import { Box, Typography } from "@mui/material";
+import { Link } from "react-scroll";
+import { INavigationPages } from "../../typesript/interfaces";
 
 const navigationPages: INavigationPages[] = [
     { id: "2212", title: "Меню", link: "menu" },
     { id: "2213", title: "Преимущества", link: "advantage" },
     { id: "2214", title: "О Доставке", link: "delivery" },
     { id: "2215", title: "Отзывы", link: "comments" },
-]
+];
 
 const Navigation = () => {
     return (
@@ -26,10 +25,10 @@ const Navigation = () => {
                             {el.title}
                         </Typography>
                     </Link>
-                )
+                );
             })}
         </Box>
-    )
+    );
 }
 
-export default Navigation
+export default Navigation;

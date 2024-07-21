@@ -1,6 +1,6 @@
 import { Box, IconButton, Menu, MenuItem } from '@mui/material'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { IBasket } from '../../typesript/interfaces';
 
 
@@ -47,7 +47,7 @@ const Basket = ({ products }: IBasket) => {
                                     minHeight: "100px"
                                 }}
                             >
-                                {el.el.title}
+                                {el.title}
                             </MenuItem>
                         ))
                         :

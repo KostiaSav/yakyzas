@@ -12,12 +12,16 @@ const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: "/yakyzas",
+                path: "/",
                 element: <App />,
             }
         ],
         errorElement: <Error />
     },
-]);
+],
+    {
+        basename: "/yakyzas"
+    }
+);
 
 export default router

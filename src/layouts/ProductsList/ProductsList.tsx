@@ -13,7 +13,7 @@ const ProductsList = (props: IProductList) => {
     return (
         <Box>
             <Grid container marginTop={"50px"} gap={"30px 15px"}>
-                {isLoading && <Box>Loading...</Box>}
+                {isLoading && <Box>Loading....</Box>}
                 {error && <Box>{String(error)}</Box>}
                 {
                     data?.map((el) => {
